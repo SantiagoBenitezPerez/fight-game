@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Finlandica:ital@1&family=Fjalla+One&family=Kalam&family=Lobster&family=Titan+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+#game-container {
+    /* background-color: yellow; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    margin-top: 60px;
+}
+
+#top-container {
+    /* background-color: red; */
+    height: 75%;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player {
+    /* background-color: yellow; */
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: lightblue;
+    width: 55%;
+    height: 60px;
+}
+
+.btns {
+    display:block;
+    width: 60%;
+    border-radius: 40%;
+    height: 20px;
+    border: 1px transparent;
+
+}
+
+.btns-div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.imgs {
+    height: 40%;
+}
+
+#simulate {
+    height: 60px;
+    width: 70px;
+    background-color: rgb(25, 151, 25);
+    border-radius: 40%;
+    color: white;
+    font-size: 15px;
+}
+
+#bottom-container {
+    /* background-color: blue; */
+    height: 25%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#reset {
+    width: 100px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: orange;
+    border: 2px solid #eee;
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fighting Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="top-container">
+            <div id="player1" class="player">
+                <h3 id="player1-name">Player1</h3>
+                <img class="imgs" id="p1" src="https://i.gifer.com/origin/00/0019f6845ceaa9347b881ccbe8f5644a_w200.gif" alt="player 1 image">
+                <div class="control-btns">
+                    <div class = "btns-div"><span id="q">Q: </span><button id="p1-attack" class = "btns">Attack</button></div>
+                        <div class = "btns-div"><span id="A">A: </span><button id="p1-heal" class = "btns">Heal</button></div>
+                </div>
+                <div id="health-p1" class = "health-div">
+                    Health: 100
+                </div>
+            </div>
+            
+            <button id="simulate">Simulate</button>
+
+            <div id="player2" class="player">
+                <h3 id="player2-name">Player2</h3>
+                <img class="imgs" id="p2" src="https://c.tenor.com/linSqKpI35gAAAAM/akuma-fighting-stance.gif" alt="player 2 image" >
+                <div class="control-btns">
+                    <div class = "btns-div"><span id="q">P: </span><button id="p2-attack" class = "btns">Attack</button></div>
+                    <div class = "btns-div"><span id="A">L: </span><button id="p2-heal" class = "btns">Heal</button></div>
+                </div>
+                <div id="health-p2" class = "health-div">
+                   Health: 100
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="bottom-container">
+            <div id="result"></div>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    
+    <audio id="punch-p1" src="sounds/fastpunch.mp3" type="audio/mpeg"></audio>
+    <audio id="heal-p1" src="sounds/fastheal.mp3" type="audio/mpeg"></audio>
+
+    <audio id="punch-p2" src="sounds/quickhit.mp3" type="audio/mpeg"></audio>
+    <audio id="heal-p2" src="sounds/quickheal.mp3" type="audio/mpeg"></audio>
+    
+    <audio id="victory" src="sounds/victory.mp3" type="audio/mpeg"></audio>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
